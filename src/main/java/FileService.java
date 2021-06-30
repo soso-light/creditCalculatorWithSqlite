@@ -19,6 +19,7 @@ public class FileService {
                 Map<String, Object> map = list.get(i);
 
                 String name = (String) map.get("NAME");
+                String studentNumber = (String) map.get("STUDENT_NUM");
                 int kor_score = Integer.parseInt(map.get("KOR_SCORE").toString());
                 int eng_score = Integer.parseInt(map.get("ENG_SCORE").toString());
                 int math_score = Integer.parseInt(map.get("MATH_SCORE").toString());
@@ -26,7 +27,7 @@ public class FileService {
 
                 int sum = kor_score + eng_score + math_score;
 
-                FileUtils.write (file,name + " / " + kor_score + " / " +eng_score + " / " + math_score + " / " + reg_date + "\n", true);
+                FileUtils.write (file,name + " / " + studentNumber + " / " + kor_score + " / " +eng_score + " / " + math_score + " / " + reg_date + "\n", true);
             }
             // fileUtils 사용
         }catch (FileNotFoundException e) {

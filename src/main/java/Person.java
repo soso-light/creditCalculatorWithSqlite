@@ -1,5 +1,6 @@
 public class Person {
     private int num;
+    private String studentNumber;
     private String name;
     private int korScore;
     private int engScore;
@@ -7,8 +8,9 @@ public class Person {
     private String grade;
     private String regDate;
 
-    public Person(int num, String name, int korScore, int engScore, int mathScore, String grade, String regDate) {
+    public Person(int num, String studentNumber, String name, int korScore, int engScore, int mathScore, String grade, String regDate) {
         this.num = num;
+        this.studentNumber = studentNumber;
         this.name = name;
         this.korScore = korScore;
         this.engScore = engScore;
@@ -19,6 +21,14 @@ public class Person {
 
     private int sum(){
         return this.korScore + this.engScore + this.mathScore;
+    }
+
+    public String getStudentNumber() {
+        return studentNumber;
+    }
+
+    public void setStudentNumber(String studentNumber) {
+        this.studentNumber = studentNumber;
     }
 
     public static String calculateGrade(int korScore, int engScore, int mathScore){
@@ -48,7 +58,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return this.num+1 + ". " + this.name + " " +  this.korScore + "  " + this.engScore + "  " + this.mathScore + "   " + sum() + "  " + sum()/3 + "   "  + this.grade + "     "  +this.regDate ;
+        return this.num+1 + ". " + this.studentNumber + " " +  this.name + " " +  this.korScore + "  " + this.engScore + "  " + this.mathScore + "   " + sum() + "  " + sum()/3 + "   "  + this.grade + "     "  +this.regDate ;
     }
 
     public int getNum() {

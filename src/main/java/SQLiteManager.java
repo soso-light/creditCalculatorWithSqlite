@@ -6,7 +6,7 @@ public class SQLiteManager {
 
     //   - Database 변수
     private static final String SQLITE_JDBC_DRIVER = "org.sqlite.JDBC";
-    private static final String SQLITE_FILE_DB_URL = "jdbc:sqlite:person.db";
+    private static final String SQLITE_FILE_DB_URL = "jdbc:sqlite:student.db";
     //  - Database 옵션 변수
     private static final boolean OPT_AUTO_COMMIT = false;
     private static final int OPT_VALID_TIMEOUT = 500;
