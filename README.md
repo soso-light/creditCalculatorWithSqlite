@@ -1,5 +1,6 @@
 # creditCalculatorWithSqlite
-
+### 기존 코드에서 달라진 것 정리
+https://github.com/soso-light/creditCalculatorWithSqlite/blob/b756b812c2f4c38c9f22c7b4f15d9f45e931dde3/change.md
 ## 개발 step
 
 1. 새 프로젝트 생성 (File > New > Project.. > Gradle > Java) 후 creditCalculatorWithFile 복사
